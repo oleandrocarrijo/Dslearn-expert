@@ -21,3 +21,7 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES('Trilha Spring Boot', 'Trilha principal do curso', 1, 'https://fakeimg.pl/300x300', 1, '1' );
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES('Forum', 'Tire suas duvidas', 2, 'https://fakeimg.pl/300x300', 2, '1' );
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES('Lives', 'Lives exclusivas para a turma', 3, 'https://fakeimg.pl/300x300', 0, '1' );
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES('Capítulo 1', 'Introdução ao Java', 1, 'https://fakeimg.pl/300x300', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES('Capítulo 2', 'Introdução a Programação Orientada a Objetos', 2, 'https://fakeimg.pl/300x300', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES('Capítulo 3', 'Introdução ao Spring Boot', 3, 'https://fakeimg.pl/300x300', 1, 2);
