@@ -14,6 +14,7 @@ public class Topic {
     private Long id;
     private String title;
     private String body;
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant moment;
 
     @ManyToOne
