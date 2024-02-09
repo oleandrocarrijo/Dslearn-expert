@@ -43,3 +43,9 @@ INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, du
 
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
+
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Lembrete: Aula ao vivo hoje as 20:00h', TIMESTAMP WITH TIME ZONE '2024-02-10T10:00:00Z', true, '/offers/1/resource/1/sections/1', 1)
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Promoção: Faça o Upgrade para o Curso Java Spring 40%OFF', TIMESTAMP WITH TIME ZONE '2024-02-10T15:00:00Z', true, '/offers/1/resource/1/sections/1', 2)
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Lembrete: Aula ao vivo hoje as 19:00h', TIMESTAMP WITH TIME ZONE '2024-05-10T10:00:00Z', true, '/offers/1/resource/1/sections/1', 1)
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Entrega da Tarefa hoje até as 21:30h', TIMESTAMP WITH TIME ZONE '2024-01-10T10:00:00Z', true, '/offers/1/resource/1/sections/1', 2)
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Estamos ao vivo agora!', TIMESTAMP WITH TIME ZONE '2024-02-10T22:00:00Z', true, '/offers/1/resource/1/sections/1', 2)
